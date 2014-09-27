@@ -1,0 +1,68 @@
+<div style=" height: 50px;background-color: deepskyblue;">
+<div id="header"><b><h2>Hospital Counselling </h2></b></div>
+</div>
+<div class="row">
+  <div class="span6" style="background-color: #ffffff;">
+    <h3 style="text-align: center;color:#06367B;">PATIENT</h3>
+    <hr>
+    <div style="text-align: center;">
+      <%= form_for(@patient, :remote => true) do |f| %>
+
+        <div class="form-group">
+          <%= f.text_field :name,:class => "form-control",:placeholder => "Name" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :phone_number, :class => "form-control",:placeholder => "Phone Number" %>
+        </div>
+
+
+        <div class="form-group" style="margin-left: 144px;margin-top: -45px;">
+          <%= f.submit "Submit",:class => "btn btn-warning",:style=>"background-image:linear-gradient(#FF7E00, #FF7E00);border-color:#FF7E00;color:#ffffff;margin-top:41px;" %>
+        </div>
+      <%  end %>
+    </div>
+  </div>
+
+  <div class="span6" style="background-color: #ffffff;">
+    <h3 style="text-align: center;color:#06367B;">DOCTOR</h3>
+    <hr>
+    <div style="text-align: center;">
+      <%= form_for(@doctor, :remote => true) do |f| %>
+
+        <div class="form-group">
+          <%= f.text_field :name,:class => "form-control",:placeholder => "Name" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :phone_number, :class => "form-control",:placeholder => "Phone Number" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :specialization,:class => "form-control",:placeholder => "Specialization" %>
+        </div>
+
+        <div class="form-group" style="margin-left: 148px;margin-top: -4px;">
+          <%= f.submit "Submit",:class => "btn btn-warning",:style=>"background-image:linear-gradient(#FF7E00, #FF7E00);border-color:#FF7E00;color:#ffffff;" %>
+        </div>
+      <%  end %>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="span6" style="background-color: #ffffff;">
+    <div id="appointment">
+      <%= render :partial => "/appointments/new" %>
+    </div>
+    
+    </div>
+
+
+    <div class="span6" style="background-color: #ffffff;">
+      <div id='app_list'>
+        <%= render :partial => "/appointments/index" %>
+      </div>
+    </div>
+  </div>
+<div id-="footer" style="height: 50px;background-color: #BECFFB"></div>

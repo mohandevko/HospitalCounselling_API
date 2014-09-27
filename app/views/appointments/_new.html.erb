@@ -1,0 +1,22 @@
+<h3 style="text-align: center;color:#06367B;">APPOINTMENT</h3>
+    <hr>
+    <div style="text-align: center;">
+      <%= form_for(@appointment, :remote => true) do |f| %>
+
+        <div class="form-group">
+          <%= f.select :doctor_id,options_for_select([["Doctor Name"]] + Doctor.all.map{|d| [d.name,d.id]}),{},:class => "form-control" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.select :patient_id,options_for_select([["Patient Name"]] + Patient.all.map{|d| [d.name,d.id]}),{},:class => "form-control" %>
+          </div>
+
+          <div class="form-group" style="height:10px;">
+            <%= f.text_field :diseases,:class=> "form-control",:placeholder => "Diseases" %>
+          </div><br><br>
+
+          <div class="form-group" style="margin-top: -14px; margin-left: 148px;">
+            <%= f.submit "Submit",:class => "btn btn-warning",:style=>"background-image:linear-gradient(#FF7E00, #FF7E00);border-color:#FF7E00;color:#ffffff;" %>
+          </div>
+        <%  end %>
+      </div>

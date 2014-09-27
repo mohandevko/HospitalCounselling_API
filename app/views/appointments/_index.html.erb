@@ -1,0 +1,17 @@
+<h3 style="text-align: center;color:#06367B;">VIEW APPOINTMENT</h3>
+<hr>
+<table class="table table-bordered table-striped">
+  <tr style="color:#06367B;">
+    <th>Patient Name</th>
+    <th>Doctor Name</th>
+    <th>Diseases</th>
+  </tr>
+
+  <% @appointments.each do |appoint| %>
+    <tr>
+      <td><%= appoint.patient.name %></td>
+      <td><%= appoint.doctor.name %></td>
+      <td><%= appoint.diseases %></td>
+    </tr>
+  <% end %>
+</table>
