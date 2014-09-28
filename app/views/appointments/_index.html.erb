@@ -7,7 +7,7 @@
     <th>Diseases</th>
   </tr>
 
-  <% @appointments.each do |appoint| %>
+  <% @appointments.last(4).each do |appoint| %>
     <tr>
       <td><%= appoint.patient.name %></td>
       <td><%= appoint.doctor.name %></td>
