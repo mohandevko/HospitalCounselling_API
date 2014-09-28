@@ -1,4 +1,6 @@
 HospitalCounselling::Application.routes.draw do
+  get "home/index"
+
   root :to => "patients#index"
 
   resources :patients
