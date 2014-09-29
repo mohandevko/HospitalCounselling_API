@@ -7,7 +7,9 @@
   <%= csrf_meta_tags %>
 
 </head>
-  <div id="header-title"><b><h2>Hospital Counselling </h2></b></div>
+<div style=" height: 50px;background-color: #BECFFB;">
+  <div id="header-title" style="margin-left:495px;"><b><h2>Hospital Counselling </h2></b></div>
+</div>
 <body>
 
 <%= yield %>
