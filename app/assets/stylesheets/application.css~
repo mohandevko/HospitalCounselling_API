@@ -13,9 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-#header-title{
-  margin-left: 525px;
-  width: 316px;
-  background-color: #BECFFB;
-}
