@@ -21,14 +21,6 @@ ActiveRecord::Schema.define(:version => 20140927112615) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "appoitments", :force => true do |t|
-    t.integer  "doctor_id"
-    t.integer  "patient_id"
-    t.string   "diseases"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "doctors", :force => true do |t|
     t.string   "name"
     t.integer  "phone_number"

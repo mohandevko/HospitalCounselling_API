@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails Hospital-Counselling: development" uuid="4a87e133-b0fd-4abc-8948-29071bbe0bf5">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/hospital_counselling</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/hospital_counselling_API</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries />
