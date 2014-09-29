@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 
 </head>
-<div style=" height: 50px;background-color: #BECFFB margin-left:495px; ">
+<div style=" height: 50px;background-color: #BECFFB;">
   <div id="header-title"><b><h2>Hospital Counselling </h2></b></div>
 </div>
 <body>
